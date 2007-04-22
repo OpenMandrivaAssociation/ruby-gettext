@@ -1,6 +1,6 @@
 %define name ruby-gettext
 %define version 1.7.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Native Language Support Library and Tools for Ruby
 Name: %{name}
@@ -9,13 +9,10 @@ Release: %{release}
 URL: http://ponx.s5.xrea.com/hiki/ruby-gettext.html
 Source0: %{name}-package-%{version}.tar.bz2
 License: GPL
-Group: Development/Other
+Group: Development/Ruby
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby >= 1.8.2
 BuildRequires: ruby-devel gettext-devel ruby-racc ruby-rake
-
-%{expand:%%define ruby_libdir %(ruby -rrbconfig -e "puts Config::CONFIG['sitelibdir']")}
-%{expand:%%define ruby_archdir %(ruby -rrbconfig -e "puts Config::CONFIG['sitearchdir']")}
 
 %description
 Ruby GetText Package is Native Language Support Library and Tools whichi
@@ -54,8 +51,8 @@ rm -rf %buildroot
 
 %files -f %name.lang
 %defattr(-,root,root)
-%{ruby_archdir}/*
-%{ruby_libdir}/gettext*
+%{ruby_sitearchdir}/*
+%{ruby_sitelibdir}/gettext*
 %{_bindir}/*
 
 %doc COPYING README samples test ChangeLog 
