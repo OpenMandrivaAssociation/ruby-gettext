@@ -1,13 +1,13 @@
 %define name ruby-gettext
-%define version 1.7.0
-%define release %mkrel 2
+%define version 1.10.0
+%define release %mkrel 1
 
 Summary: Native Language Support Library and Tools for Ruby
 Name: %{name}
 Version: %{version}
 Release: %{release}
 URL: http://ponx.s5.xrea.com/hiki/ruby-gettext.html
-Source0: %{name}-package-%{version}.tar.bz2
+Source0: http://rubyforge-files.ruby-forum.com/gettext/%{name}-package-%{version}.tar.gz
 License: GPL
 Group: Development/Ruby
 BuildRoot: %{_tmppath}/%{name}-buildroot
