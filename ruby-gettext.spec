@@ -10,7 +10,6 @@ URL: http://ponx.s5.xrea.com/hiki/ruby-gettext.html
 Source0: http://rubyforge-files.ruby-forum.com/gettext/%{name}-package-%{version}.tar.gz
 License: GPL
 Group: Development/Ruby
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby >= 1.8.2
 BuildRequires: ruby-devel gettext-devel ruby-racc ruby-rake
 
