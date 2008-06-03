@@ -1,6 +1,6 @@
 %define name ruby-gettext
 %define version 1.10.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Native Language Support Library and Tools for Ruby
 Name: %{name}
