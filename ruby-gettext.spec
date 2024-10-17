@@ -6,7 +6,7 @@ Summary: Native Language Support Library and Tools for Ruby
 Name: %{name}
 Version: %{version}
 Release: %{release}
-URL: http://ponx.s5.xrea.com/hiki/ruby-gettext.html
+URL: https://ponx.s5.xrea.com/hiki/ruby-gettext.html
 Source0: http://rubyforge-files.ruby-forum.com/gettext/%{name}-package-%{version}.tar.gz
 License: GPL
 Group: Development/Ruby
